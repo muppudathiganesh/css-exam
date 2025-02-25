@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background: #333;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            
+        }
+
+        .sidebar a:hover {
+            background: #007bff;
+        }
+
+        /* Content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        section {
+            height: 300px;
+            padding: 20px;
+            border-bottom: 2px solid #2294e5;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+        <a href="#section4">Section 4</a>
+    </nav>
+
+    
+    <div class="content">
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur ducimus reiciendis repellat necessitatibus odit quas qui debitis possimus, incidunt ipsam blanditiis tempore optio ipsum atque sit earum laborum laboriosam?.</p>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta dolorem nemo velit sed voluptates cupiditate temporibus laborum quis totam natus eligendi repellendus sunt, iusto recusandae porro, officia impedit sit?</p>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi, corporis odio facere ab esse ad delectus quidem dignissimos natus, cumque neque alias odit porro. Dolorem iusto perferendis eaque minus.</p>
+        </section>
+        <section id="section4">
+            <h2>Section 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis facilis non rerum quam sequi nobis reprehenderit provident et repellat maxime, asperiores, maiores ipsa velit explicabo! Distinctio voluptate blanditiis asperiores!</p>
+        </section>
+    </div>
+
+</body>
+</html>

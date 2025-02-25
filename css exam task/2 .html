@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.slide{
+    color: blue;
+    animation: slidein 2s ease-in-out;
+    text-align: center;
+}
+@keyframes slidein{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+        color: rgb(110, 135, 20);
+    }
+    to{
+        opacity: 1;
+        color: rgb(13, 20, 97);
+        transform:translateY(0)
+    }
+}
+button{
+    background-color: yellow;
+}
+button:hover{
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+    <form>
+    <select class="slide">
+        <option value="">Select a course</option>
+        <option value="computer-science">Computer Science</option>
+        <option value="ece">ECE</option>
+        <option value="engineering">Engineering</option>
+    </select><br>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
